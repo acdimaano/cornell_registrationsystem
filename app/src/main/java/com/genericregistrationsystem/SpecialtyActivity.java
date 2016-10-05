@@ -14,7 +14,7 @@ import android.view.View;
 import android.support.v7.app.ActionBarActivity;
 
 /**
- * Created by Rhiza roque on 8/3/2015.
+ * Created by Alan C. Dimaano on 8/3/2015.
  */
 public class SpecialtyActivity extends ActionBarActivity
 {

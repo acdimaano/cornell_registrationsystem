@@ -32,9 +32,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-/**
- * Created by Rhiza roque on 7/25/2015.
- * Alan C. Dimaano
+/*
+ * Created by Alan Dimaano on 8/19/2015.
  */
 public class ExistingPatientActivity extends ActionBarActivity
 {

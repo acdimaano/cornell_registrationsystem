@@ -10,7 +10,6 @@ import android.database.sqlite.SQLiteOpenHelper;
  * especially created for handling DB and SQL transactions.
  *
  * Created by: Alan C. Dimaano 20/08/2015
- * Rhiza C. Roque
  */
 
 public class GRSDBHelper extends SQLiteOpenHelper{

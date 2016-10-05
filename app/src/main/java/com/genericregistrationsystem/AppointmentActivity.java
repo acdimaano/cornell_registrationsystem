@@ -12,8 +12,7 @@ import android.view.View;
  * This is the AppointmentActivity class.
  * For the appointments of the patient and doctors.
  *
- * Created by Rhiza roque on 8/14/2015.
- * Alan C. Dimaano
+ * Created by Alan C. Dimaano on 8/14/2015.
  */
 public class AppointmentActivity extends ActionBarActivity
 {

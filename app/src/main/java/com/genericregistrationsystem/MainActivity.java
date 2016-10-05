@@ -11,6 +11,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
+/*
+ * Created by Alan Dimaano on 8/19/2015.
+ */
 
 public class MainActivity extends ActionBarActivity {
 

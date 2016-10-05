@@ -8,7 +8,6 @@ import java.util.Calendar;
  * code processes like handling dates etc.
  *
  * Created by Alan Dimaano on 8/19/2015.
- * Rhiza C. Roque
  */
 public class GRSUtility {
     private String getAddDateTimeString() {

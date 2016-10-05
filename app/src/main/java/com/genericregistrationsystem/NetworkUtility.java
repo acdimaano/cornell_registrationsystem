@@ -8,8 +8,7 @@ import android.net.NetworkInfo;
  * This is the class for checking network connectivity.
  * This will be used by the activities for checking connectivities.
  *
- * Created by Alan Dimaano on 8/16/2015.
- * Rhiza C. Roque
+ * Created by Alan Dimaano on 8/19/2015.
  */
 
 public class NetworkUtility {

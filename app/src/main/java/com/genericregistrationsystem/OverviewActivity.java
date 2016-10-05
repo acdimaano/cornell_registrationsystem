@@ -8,7 +8,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 /**
- * Created by Rhiza roque on 8/14/2015.
+ * Created by Alan Dimaano on 8/19/2015.
  */
 public class OverviewActivity extends ActionBarActivity
 {

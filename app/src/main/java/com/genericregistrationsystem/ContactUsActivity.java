@@ -13,8 +13,7 @@ import android.support.v7.app.ActionBarActivity;
  * This is the Contact us activity for the application.
  * This merely displays the contact information.
  *
- * Created by Rhiza roque on 8/10/2015.
- * Alan C. Dimaano
+ * Created by Alan C. Dimaano on 8/10/2015.
  */
 public class ContactUsActivity extends ActionBarActivity
 {

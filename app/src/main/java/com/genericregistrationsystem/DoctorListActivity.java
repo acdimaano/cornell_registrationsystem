@@ -49,8 +49,8 @@ import java.util.List;
  * This is for the DoctorList Activity.
  * Showing the doctors lists.
  *
- * Created by Rhiza roque on 8/4/2015.
- * Alan C. Dimaano
+ * Created by Alan C. Dimaano on 8/4/2015.
+ * 
  */
 public class DoctorListActivity extends ActionBarActivity
 {

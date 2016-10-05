@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 /**
- * Created by Rhiza roque on 8/14/2015.
+ * Created by Alan Dimaano on 8/19/2015.
  */
 public class QueueNumberActivity extends ActionBarActivity
 {

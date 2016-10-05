@@ -11,8 +11,7 @@ import android.view.MenuItem;
  * This class is the About Activity describing the application.
  * This will highlight what the application does and what it is for.
  *
- * Created by Rhiza roque on 8/15/2015.
- * Alan C. Dimaano
+ * Created by Alan C. Dimaano on 8/15/2015.
  */
 public class AboutActivity extends ActionBarActivity
 {

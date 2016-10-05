@@ -6,6 +6,10 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+/*
+ * Created by Alan Dimaano on 8/19/2015.
+ */
+
 public class GRSDBLoader extends SQLiteOpenHelper {
 
 	// Database Name
