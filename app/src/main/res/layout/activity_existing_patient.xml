@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity">
+
+    <!-- Header layout -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/header">
+
+        <TextView
+            android:id="@+id/lblRetPat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/existpat_welcome_header"
+            android:textColor="#212121"
+            android:paddingTop="35dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <!-- Content layout -->
+    <ScrollView
+        android:id="@+id/existpatient_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/footer"
+        android:background="#E1F5FE"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/existpat_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lblNHI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/existpat_nhi"
+                android:textColor="#212121"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/txtNHI"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/lblNHI"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:background="@drawable/edittext_design"/>
+
+            <ImageButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/submit"
+                android:layout_below="@+id/txtNHI"
+                android:layout_marginTop="30dp"
+                android:onClick="btnReturnSubmit"/>
+
+            <ImageButton
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cancel"
+                android:layout_below="@+id/txtNHI"
+                android:layout_toRightOf="@+id/btnSubmit"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="btnCancel"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <!-- Footer layout -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="left"
+        android:background="#212121"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:textColor="#fff"
+            android:paddingRight="15dp"
+            android:onClick="tvAbout"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overview"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/about"
+            android:paddingRight="15dp"
+            android:onClick="tvOverview"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/overview"
+            android:paddingRight="15dp"
+            android:onClick="tvContact"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help"
+            android:layout_toRightOf="@+id/contact"
+            android:textColor="#fff"
+            android:onClick="tvHelp"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+

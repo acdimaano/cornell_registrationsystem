@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity">
+
+    <!-- Header layout -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/patient_header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/home_link"
+            android:textColor="#ff0d5f"
+            android:paddingTop="8dp"
+            android:paddingLeft="270dp"/>
+
+        <TextView
+            android:id="@+id/lblNewPat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/newpat_welcome_header"
+            android:textColor="#212121"
+            android:paddingTop="45dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <!-- Content layout -->
+    <ScrollView
+        android:id="@+id/newpatient_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/footer"
+        android:background="#EEEDEE">
+
+        <RelativeLayout
+            android:id="@+id/existpat_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/lblNewPatMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newpat_msg"
+                android:textColor="#212121"
+                android:paddingTop="20dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/lblFName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name *"
+                android:layout_below="@+id/lblNewPatMsg"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="70dp"
+                android:textColor="#212121"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/lblLName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name *"
+                android:layout_below="@+id/lblNewPatMsg"
+                android:layout_toRightOf="@+id/lblFName"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="70dp"
+                android:textColor="#212121"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/lblMI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MI"
+                android:layout_below="@+id/lblNewPatMsg"
+                android:layout_toRightOf="@+id/lblLName"
+                android:layout_marginTop="20dp"
+                android:textColor="#212121"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/txtFName"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/lblFName"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_design"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/txtLName"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/lblLName"
+                android:layout_toRightOf="@+id/txtFName"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_design"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/txtMI"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/lblMI"
+                android:layout_toRightOf="@+id/txtLName"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_design"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/lblGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:textColor="#212121"
+                android:layout_below="@+id/txtFName"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"/>
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtnMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male"
+                    android:layout_marginTop="170dp"
+                    android:textColor="#212121"
+                    android:paddingLeft="5dp"
+                    android:layout_marginRight="25dp"
+                    android:textSize="16sp"/>
+
+                <RadioButton
+                    android:id="@+id/rbtnFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginRight="25dp"
+                    android:textColor="#212121"
+                    android:paddingLeft="5dp"
+                    android:textSize="16sp"/>
+
+                <RadioButton
+                    android:id="@+id/rbtnOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other"
+                    android:layout_marginTop="170dp"
+                    android:textColor="#212121"
+                    android:paddingLeft="5dp"
+                    android:textSize="16sp"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/lblAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_address"
+                android:textColor="#212121"
+                android:layout_below="@+id/lblGender"
+                android:layout_marginTop="50dp"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/txtHomeAdd"
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/lblAddress"
+                android:background="@drawable/edittext_design"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/lblPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pat_phone_num"
+                android:textColor="#212121"
+                android:layout_below="@+id/txtHomeAdd"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/txtPatPhone"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/lblPhone"
+                android:background="@drawable/edittext_design"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/lblNewNHI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_pat_nhi"
+                android:textColor="#212121"
+                android:layout_below="@+id/txtPatPhone"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/txtNHI"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/lblNewNHI"
+                android:background="@drawable/edittext_design"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"/>
+
+            <ImageButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/submit"
+                android:layout_below="@+id/txtNHI"
+                android:layout_marginTop="20dp"/>
+
+            <ImageButton
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cancel"
+                android:layout_below="@+id/txtNHI"
+                android:layout_toRightOf="@+id/btnSubmit"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <!-- Footer layout -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="#212121"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/orgname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/org_name"
+            android:textColor="#fff"
+            android:gravity="left"/>
+
+        <TextView
+            android:id="@+id/orgadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/org_add"
+            android:textColor="#fff"
+            android:gravity="left"
+            android:layout_below="@+id/orgname"/>
+
+        <TextView
+            android:id="@+id/orgcontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/org_contact"
+            android:textColor="#fff"
+            android:layout_below="@+id/orgadd"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+

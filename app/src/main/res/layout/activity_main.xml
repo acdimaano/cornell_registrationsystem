@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity">
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/content"
+        android:background="@drawable/welcome_screen">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:text="@string/welcome"
+            android:id="@+id/lblWelcome"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="65dp"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/welcome_msg"
+            android:id="@+id/lblWelcomeMsg"
+            android:layout_below="@+id/lblWelcome"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNewPat"
+            android:background="@drawable/newpatient"
+            android:layout_below="@+id/lblWelcomeMsg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:onClick="btnNewPat"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnReturnPat"
+            android:background="@drawable/returnpatient"
+            android:layout_below="@+id/btnNewPat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:onClick="btnReturnPat"/>
+    </RelativeLayout>
+
+    <!-- Footer layout -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="left"
+        android:background="#212121"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:textColor="#fff"
+            android:paddingRight="15dp"
+            android:onClick="tvAbout"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overview"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/about"
+            android:paddingRight="15dp"
+            android:onClick="tvOverview"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/overview"
+            android:paddingRight="15dp"
+            android:onClick="tvContact"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help"
+            android:layout_toRightOf="@+id/contact"
+            android:textColor="#fff"
+            android:onClick="tvHelp"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+

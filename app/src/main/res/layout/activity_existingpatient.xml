@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity">
+
+    <!-- Header layout -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/patient_header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/home_link"
+            android:textColor="#ff0d5f"
+            android:paddingTop="8dp"
+            android:paddingLeft="270dp"/>
+
+        <TextView
+            android:id="@+id/lblRetPat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/existpat_welcome_header"
+            android:textColor="#212121"
+            android:paddingTop="45dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <!-- Content layout -->
+    <ScrollView
+        android:id="@+id/existpatient_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/footer"
+        android:background="#EEEDEE">
+
+        <RelativeLayout
+            android:id="@+id/existpat_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/lblNHI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/existpat_nhi"
+                android:textColor="#212121"
+                android:layout_marginTop="60dp"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/txtNHI"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/lblNHI"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:background="@drawable/edittext_design"/>
+
+            <ImageButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/submit"
+                android:layout_below="@+id/txtNHI"
+                android:layout_marginTop="40dp"/>
+
+            <ImageButton
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cancel"
+                android:layout_below="@+id/txtNHI"
+                android:layout_toRightOf="@+id/btnSubmit"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <!-- Footer layout -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="#212121"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/orgname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/org_name"
+            android:textColor="#fff"
+            android:gravity="left"/>
+
+        <TextView
+            android:id="@+id/orgadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/org_add"
+            android:textColor="#fff"
+            android:gravity="left"
+            android:layout_below="@+id/orgname"/>
+
+        <TextView
+            android:id="@+id/orgcontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/org_contact"
+            android:textColor="#fff"
+            android:layout_below="@+id/orgadd"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+

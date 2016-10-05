@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <!-- Content layout -->
+    <ScrollView
+        android:id="@+id/existpatient_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/footer"
+        android:background="#EEEDEE">
+
+        <LinearLayout
+            android:id="@+id/queue_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/direction_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/direction"
+                android:layout_marginTop="35dp"/>
+
+            <TextView
+                android:id="@+id/queue_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient Queue Number: "
+                android:layout_marginTop="15dp"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/doctor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr Yeng, Cristina"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/queue_specialty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cardiologist"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/room_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rm.501"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+
+            <ImageButton
+                android:id="@+id/btnGotIt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gotit"
+                android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Footer layout -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="left"
+        android:background="#212121"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:textColor="#fff"
+            android:paddingRight="15dp"
+            android:onClick="tvAbout"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overview"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/about"
+            android:paddingRight="15dp"
+            android:onClick="tvOverview"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/overview"
+            android:paddingRight="15dp"
+            android:onClick="tvContact"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help"
+            android:layout_toRightOf="@+id/contact"
+            android:textColor="#fff"
+            android:onClick="tvHelp"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

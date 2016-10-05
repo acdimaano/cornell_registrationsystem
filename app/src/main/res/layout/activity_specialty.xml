@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity">
+
+    <!-- Header layout -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/header">
+
+        <TextView
+            android:id="@+id/lblSpecialty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/speciality"
+            android:textColor="#212121"
+            android:paddingTop="25dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/lblService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/service"
+            android:layout_below="@+id/lblSpecialty"
+            android:textColor="#212121"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <!-- Content layout -->
+    <ScrollView
+        android:id="@+id/existpatient_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/footer"
+        android:background="#EEEDEE">
+
+        <GridLayout
+            android:id="@+id/specialty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:padding="20dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/btnNeuro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/neuro"
+                android:onClick="btnNeuro"
+                android:layout_marginRight="20dp"/>
+
+            <ImageButton
+                android:id="@+id/btnCardio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cardio"
+                android:onClick="btnCardio"
+                android:layout_marginRight="20dp"/>
+
+            <ImageButton
+                android:id="@+id/btnInternist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/internist"
+                android:onClick="btnInternist" />
+            <ImageButton
+                android:id="@+id/btnNatMed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="btnNatMed"
+                android:background="@drawable/natmed"/>
+
+            <ImageButton
+                android:id="@+id/btnDentist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="btnDentist"
+                android:background="@drawable/dentist"/>
+
+            <ImageButton
+                android:id="@+id/btnLab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="btnLab"
+                android:background="@drawable/lab"/>
+
+            <ImageButton
+                android:id="@+id/btnOrtho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="btnOrtho"
+                android:background="@drawable/ortho"/>
+
+            <ImageButton
+                android:id="@+id/btnPulmo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="btnPulmo"
+                android:background="@drawable/pulmo"/>
+
+            <ImageButton
+                android:id="@+id/btnOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="btnOB"
+                android:background="@drawable/ob"/>
+
+            <ImageButton
+                android:id="@+id/btnPedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="btnPedia"
+                android:background="@drawable/pedia"/>
+
+            <ImageButton
+                android:id="@+id/btnFamMed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="btnFamMed"
+                android:background="@drawable/fammed"/>
+
+            <ImageButton
+                android:id="@+id/btnEye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="btnEye"
+                android:background="@drawable/eye"/>
+
+        </GridLayout>
+
+    </ScrollView>
+
+    <!-- Footer layout -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="left"
+        android:background="#212121"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:textColor="#fff"
+            android:paddingRight="15dp"
+            android:onClick="tvAbout"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overview"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/about"
+            android:paddingRight="15dp"
+            android:onClick="tvOverview"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/overview"
+            android:paddingRight="15dp"
+            android:onClick="tvContact"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help"
+            android:layout_toRightOf="@+id/contact"
+            android:textColor="#fff"
+            android:onClick="tvHelp"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/overview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_title"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/subTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sub_title"
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="#212121"
+                android:layout_below="@+id/title"/>
+
+            <ImageView
+                android:id="@+id/user_friendly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/subTitle"
+                android:background="@drawable/smiley"/>
+
+            <TextView
+                android:id="@+id/lblUserFriendly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/user_title"
+                android:layout_below="@+id/subTitle"
+                android:layout_toRightOf="@+id/user_friendly"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/lblUserFriendlyDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/user_desc"
+                android:layout_below="@+id/lblUserFriendly"
+                android:layout_toRightOf="@+id/user_friendly"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:id="@+id/clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/lblUserFriendlyDesc"
+                android:background="@drawable/clock"/>
+
+            <TextView
+                android:id="@+id/lblClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/clock_title"
+                android:layout_below="@+id/lblUserFriendlyDesc"
+                android:layout_toRightOf="@+id/clock"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/lblClockDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/clock_desc"
+                android:layout_below="@+id/lblClock"
+                android:layout_toRightOf="@+id/user_friendly"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:id="@+id/mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/lblClockDesc"
+                android:background="@drawable/mobile"/>
+
+            <TextView
+                android:id="@+id/lblMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/mobile_title"
+                android:layout_below="@+id/lblClockDesc"
+                android:layout_toRightOf="@+id/mobile"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/lblMobileDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/mobile_desc"
+                android:layout_below="@+id/lblMobile"
+                android:layout_toRightOf="@+id/mobile"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:id="@+id/lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/lblMobileDesc"
+                android:background="@drawable/lock"/>
+
+            <TextView
+                android:id="@+id/lblLock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/lock_title"
+                android:layout_below="@+id/lblMobileDesc"
+                android:layout_toRightOf="@+id/lock"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/lblLockDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/lock_desc"
+                android:layout_below="@+id/lblLock"
+                android:layout_toRightOf="@+id/lock"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
